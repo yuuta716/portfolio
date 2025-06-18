@@ -1,0 +1,634 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
+
+/* ハンバーガーメニュー */
+
+.l-bottomNav-item {
+  display: block;
+}
+
+.l-modalMenu--bodyInner {
+  height: 100%;
+  overflow: scroll;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.l-bottomNav-Menu-List {
+  position: fixed;
+}
+
+.l-bottomNav-Menu-List ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 3rem;
+}
+
+.l-modalMenu--bodyInner li {
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.l-modalMenu--bodyInner li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 0 4rem 0 0;
+  color: #000;
+  margin-top: 2rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255);
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s;
+  z-index: 999;
+}
+
+#open {
+  position: fixed;
+  top: 1rem;
+  right: 16px;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #e5348c;
+  border-radius: 50%;
+  padding: 1rem;
+  z-index: 999;
+}
+
+.overlay #close {
+  position: fixed;
+  top: 2rem;
+  right: 4rem;
+  cursor: pointer;
+  color: #000;
+  font-size: 5rem;
+  z-index: 999;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.l-modalMenu-menuList {
+  /* padding: 5vw 6vw; */
+  font-size: 3.7vw;
+  list-style: none;
+  display: none;
+  /* background-color: #efece7; */
+}
+
+.appear .l-modalMenu-menuList {
+  display: block;
+}
+
+.l-modalMenu-menuList a {
+  align-items: center;
+  display: flex;
+  padding: 1.3vw 0;
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+.pagetop {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  background-color: #000;
+  color: #f5f5f5;
+  border: 1px solid #fff;
+  padding: .5rem 1rem 0 1rem;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 99;
+}
+
+
+.workPage {
+  display: flex;
+  height: 30vw;
+  flex-direction: column;
+  gap: 4rem;
+  padding-top: 10rem;
+  padding-left: 4rem;
+  background-image: url("../portfolio-img/WT1.png");
+  background-size: cover;
+  animation-name: fadeInAnime;
+  transition: opacity 6s, transform 4s;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+@keyframes workPage {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: .6;
+  }
+
+  80% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.workPage.sl {
+  opacity: 0;
+}
+
+.workPage.appear {
+  opacity: 1;
+  transform: none;
+}
+
+.catchphrase img {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.skill img {
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.l-modalMenu--menuContainer {
+  display: none;
+}
+
+.appear .l-modalMenu--menuContainer {
+  display: block;
+  transition: transform .3s;
+}
+
+/* サービスリスト */
+
+.l-modalMenu--menu {
+  background-color: black;
+}
+
+.l-modalMenu--menuTitle {
+  text-align: center;
+  padding-top: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.l-modalMenu--menuTitle img {
+  width: 5vw;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 実績 */
+.Achievements {
+  display: block;
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+.Achievements h2 img {
+  width: 15vw;
+  height: auto;
+}
+
+.Achievements-Items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin: 4rem 0;
+}
+
+.Achievements-Item {
+  animation-name: fadeInAnime;
+  transition: opacity 2s, transform 2s;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+@keyframes Achievements-Item {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: .6;
+  }
+
+  80% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.Achievements-Item.sl {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.Achievements-Item.appear {
+  opacity: 1;
+  transform: none;
+}
+
+.Achievements-Item a {
+  text-decoration: none;
+}
+
+.Achievements-Item img {
+  width: 30vw;
+  height: 20vw;
+  object-fit: cover;
+}
+
+.Achievements-Item h2 {
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.Achievements-Item span {
+  display: inline-block;
+  color: #fff;
+  padding-top: 1rem;
+}
+
+.skillItem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.skillItem img {
+  width: 4vw;
+  height: auto;
+}
+
+/* サービス */
+
+.serviceList {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.serviceListItem.active {
+  display: block;
+}
+
+.serviceListItem {
+  display: none;
+}
+
+.serviceList h2 img {
+  width: 20vw;
+  height: auto;
+}
+
+.sub-header-body ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.sub-header-body li {
+  padding: 2.9333333333vw 2vw 3.2vw;
+}
+
+.sub-header-body img {
+  width: 15vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.serviceListItem img {
+  width: 50vw;
+  object-fit: cover;
+}
+
+/* ワークフロー */
+
+.workFlow {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.workFlow h2 img {
+  width: 25vw;
+  height: auto;
+}
+
+.workFlowItems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+}
+
+.workFlowItem {
+  animation-name: fadeInAnime;
+  transition: opacity 2s, transform 2s;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+.workFlowItem img {
+  width: 30vw;
+  height: auto;
+}
+
+@keyframes workFlowItem {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: .6;
+  }
+
+  80% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.workFlowItem.sl {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.workFlowItem.appear {
+  opacity: 1;
+  transform: none;
+}
+
+/* 注意書き */
+
+.cautionaryNoteList {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cautionaryNoteList h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.cautionaryNoteList ul {
+  list-style: none;
+}
+
+.cautionaryNoteList li {
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+/* お問い合わせ */
+
+.contact {
+  display: block;
+  text-align: center;
+}
+
+.contact img {
+  width: 50vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.cautionaryNote {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.cautionaryNote span {
+  color: #fff;
+  font-size: .9rem;
+}
+
+@media(max-width:1030px) {
+  .workPage {
+    display: flex;
+    height: 86vh;
+    padding-top: 50%;
+  }
+
+  .catchphrase img {
+    width: 70vw;
+  }
+
+  .skill img {
+    width: 50vw;
+  }
+
+  .cautionaryNote span {
+    font-size: 1rem;
+  }
+
+}
+
+@media(max-width:540px) {
+  #open {
+    top: .6rem;
+  }
+
+  .overlay #close {
+    font-size: 3rem;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .workPage {
+    padding-left: 2rem;
+    background-image: url("../portfolio-img/MWT1.png");
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .l-modalMenu--menuTitle {
+    padding-top: 1rem;
+  }
+
+  .l-modalMenu--menuTitle img {
+    width: 8vw;
+  }
+
+  .l-bottomNav-Menu-List ul {
+    margin-left: 1rem;
+  }
+
+  .Achievements-Items {
+    display: block;
+  }
+
+  .Achievements-Item {
+    margin-top: 2rem;
+  }
+
+  .Achievements h2 img {
+    width: 25vw;
+  }
+
+  .Achievements-Items img {
+    width: 80%;
+    height: 40vh;
+  }
+
+  .skillItem img {
+    width: 8vw;
+    height: auto;
+  }
+
+  .serviceList h2 img {
+    width: 40vw;
+  }
+
+  .sub-header-body ul {
+    margin-top: 1rem;
+  }
+
+  .serviceListItems img {
+    width: 80%;
+  }
+
+  .sub-header-body img {
+    width: 30vw;
+  }
+
+  .workFlow h2 img {
+    width: 40vw;
+  }
+
+  .workFlowItems {
+    display: block;
+  }
+
+  .workFlowItem {
+    margin-top: 3rem;
+  }
+
+  .workFlowItem img {
+    width: 80%;
+  }
+
+  .contact {
+    padding-bottom: 1rem;
+  }
+
+  .contact img {
+    width: 80%;
+  }
+
+  .cautionaryNote span {
+    font-size: .9rem;
+  }
+}
+
+@media(max-width:440px) {
+  #open {
+    top: 1.5rem;
+  }
+
+  .overlay #close {
+    top: .8rem;
+  }
+
+  .workPage {
+    height: 78vh;
+    padding-top: 50%;
+    padding-left: 1.5rem;
+    gap: 8rem;
+  }
+
+  .catchphrase img {
+    width: 80%;
+  }
+
+  .skill img {
+    width: 60%;
+  }
+}
+
+@media(max-wdth:415px) {
+   .workPage {
+    height: 78vh;
+    padding-top: 55%;
+    padding-left: 1.5rem;
+    gap: 8rem;
+  }
+}
+
+@media(max-width:390px) {
+  .cautionaryNoteList li {
+    font-size: .9rem;
+  }
+}
+
+@media(max-width:380px) {
+  .workPage {
+    height: 80vh;
+    padding-top: 30%;
+    gap: 4rem;
+  }
+}

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shopingSite/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="l-bottomNav-item">
+    <span class="material-icons" id="open">menu</span>
+    <div class="l-bottomNav-Menu-List overlay">
+      <span class="material-icons" id="close">close</span>
+      <div class="l-modalMenu--bodyInner">
+        <nav>
+          <ul>
+            <li><a href="shopingSite.html">ブランド</a></li>
+            <div class="l-modalMenu--menu js-accordion">
+              <div class="l-modalMenu--menuTitle Js-accordion-toggle">
+                <span>カテゴリー<span>
+              </div>
+              <div class="l-modalMenu--menuContainer">
+                <ul class="l-modalMenu-menuList">
+                  <li><a href="#">すべてのアイテムを見る</a></li>
+                  <li><a href="#">Tシャツ・トップス</a></li>
+                  <li><a href="#">トップス</a></li>
+                  <li><a href="#">アウター</a></li>
+                  <li><a href="#">パンツ</a></li>
+                  <li><a href="#">テーラードジャケット</a></li>
+                  <li><a href="#">スーツ・セットアップ</a></li>
+                  <li><a href="#">ゴルフ</a></li>
+                  <li><a href="#">アンダーウェア</a></li>
+                  <li><a href="#">シューズ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="l-modalMenu--menu js-accordion">
+              <div class="l-modalMenu--menuTitle Js-accordion-toggle">
+                <span>スペシャルコンテンツ<span>
+              </div>
+              <div class="l-modalMenu--menuContainer">
+                <ul class="l-modalMenu-menuList">
+                  <li><a href="#">EDITORS RECOMMENDS</a></li>
+                  <li><a href="#">FEATURE</a></li>
+                </ul>
+              </div>
+            </div>
+            <li><a href="#">新着商品</a></li>
+            <li><a href="point program.html">ポイントプログラム</a></li>
+            <li><a href="#">ニュース</a></li>
+            <li><a href="#">SNAP STYLE</a></li>
+            <li><a href="clubLEON.html">ClubLEON</a></li>
+            <li><a href="webLEON.html">WebLEON</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <header id="header">
+    <div class="logos">
+      <div class="logo">
+        <img src="shop-img/logo.svg">
+      </div>
+      <div class="logo">
+        <img src="shop-img/logo_r.svg">
+      </div>
+    </div>
+    <div class="header-main">
+      <nav>
+        <ul>
+          <li><a class="underLine" href="shopingSite.html">ブランド</a></li>
+          <li class="list_item">
+            <div class="link link-hover" tabindex="0">
+              <a href="menu.html" class="underLine">カテゴリー</a>
+              <!-- <div class="dropDown">
+                <ul class="dropDown_list">
+                  <li class="dropDown_item">
+                    <a href="#" class="modal-title">メニュー情報<span>></span></a>
+                  </li>
+                  <li class="dropDown_item">
+                    <div class="dropDown-courseMenu1">
+                      <a href="#">
+                        <h3>きんぐコース</h3>
+                        <div class="sub-badges">
+                          <img src="img/badge_godai.svg">
+                          <img src="img/badge_ura.svg">
+                          <img src="img/badge_limited.webp">
+                        </div>
+                        <img src="img/menu_img-02.webp" width="180" height="101"
+                          style="object-fit: cover; vertical-align: bottom;">
+                      </a>
+                    </div>
+                    <div class="dropDown-courseMenu2">
+                      <a href="#">
+                        <h3>プレミアムコース</h3>
+                        <div class="sub-badges">
+                          <img src="img/badge_tokusen.svg">
+                          <img src="img/badge_ura.svg">
+                          <img src="img/badge_godai.svg">
+                          <img src="img/badge_kokusan.svg">
+                          <img src="img/badge_limited.webp">
+                        </div>
+                        <img src="img/menu_img-03.webp" width="180" height="101"
+                          style="object-fit: cover; vertical-align: bottom;">
+                      </a>
+                    </div>
+                    <div class="dropDown-courseMenu3">
+                      <a href="#">
+                        <h3>58品コース</h3>
+                        <img src="img/menu_img-01.webp" width="180" height="101"
+                          style="object-fit: cover; vertical-align: bottom;">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropDown-list" style="text-align: left;">
+                      <ul>
+                        <li><a href="#">五大名物</a></li>
+                        <li><a href="#">期間限定</a></li>
+                        <li><a href="#">ドリンク・飲み放題メニュー</a></li>
+                        <li><a href="#">ランチコース</a></li>
+                        <li><a href="#">キッズメニュー</a></li>
+                        <li><a href="#">単品メニュー</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div> -->
+          </li>
+          <li><a class="underLine" href="#">スペシャルコンテンツ</a></li>
+          <li class="list_item">
+            <div class="link link-hover" tabindex="0">
+              <a href="kodomo.html" class="underLine">新着商品</a>
+              <!-- <div class="dropDown">
+                <ul class="dropDown_list">
+                  <li class="dropDown_item">
+                    <a href="kodomo.html" class="modal-title">お子様連れ歓迎<span>></span></a>
+                  </li>
+                  <li class="dropDown_item">
+                    <div class="modal-kidsMenu1">
+                      <a href="#">
+                        <h3>おなかがぐ～ぐ～アイランド</h3>
+                        <img src="img/thumb_mega_gugu.webp" width="180" height="101" style="object-fit: cover;">
+                      </a>
+                    </div>
+                    <div class="modal-kidsMenu2">
+                      <a href="#">
+                        <h3>キッズメニュー</h3>
+                        <img src="img/thumb_mega_kids.webp" width="180" height="101" style="object-fit: cover;">
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div> -->
+          </li>
+          <li><a class="underLine" href="point program.html">ポイントプログラム</a></li>
+          <li><a class="underLine" href="clubLEON.html">ClubLEON</a></li>
+          <li><a class="underLine" href="webLEON.html">WebLEON</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="Phone-carousel">
+    <div class="container">
+      <ul>
+        <li><img src="shop-img/carousel1.webp"></li>
+        <li><img src="shop-img/carousel2.webp"></li>
+        <li><img src="shop-img/carousel3.webp"></li>
+        <li><img src="shop-img/carousel4.webp"></li>
+      </ul>
+      <button id="prev">&laquo;</button>
+      <button id="next">&raquo;</button>
+      <nav>
+      </nav>
+    </div>
+    <nav>
+    </nav>
+  </section>
+  <div class="youtube">
+    <iframe src="https://www.youtube.com/embed/I7OFl6qGSzs?si=yMi1oR5Ub5OEDSAj" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+  <section class="section1">
+    <h2>
+      <span>「サルトリオ」のジャケット</span><br>
+      “いつも”ではない選択が地図の外側に連れて行ってくれる
+    </h2>
+    <p>
+      服を楽しむのは日常と冒険が同居する。いつもと少し違った選択を<br>
+      するのであれば、当然新しい自分と出会えるだろう。<br>
+      淡いピンクのジャケットで楽しむイタリアンテーラリングの妙──<br>
+      地図の外側を知る、素晴らしいきっかけとなることを祈って。
+    </p>
+    <a href="#" class="more">MORE</a>
+  </section>
+  <section class="section2">
+    <h2>NEW RELEASE</h2>
+    <div class="menuList">
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic1.webp">
+        </a>
+        <span class="brand">BRIONI</span>
+        <a href="#" class="title">ドローコードパンツ</a>
+        <span class="price">¥169,400</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic2.webp">
+        </a>
+        <span class="brand">GALLIA KNIT PROJECT</span>
+        <a href="#" class="title">ポロセーター</a>
+        <span class="price">¥39,600</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic3.webp">
+        </a>
+        <span class="brand">GALLIA KNIT PROJECT</span>
+        <a href="#" class="title">半袖セーター</a>
+        <span class="price">¥48,400</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic4.webp">
+        </a>
+        <span class="brand">MILD SUNSET</span>
+        <a href="#" class="title">オブザトップ</a>
+        <span class="price">¥26,400</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic5.webp">
+        </a>
+        <span class="brand">MILD SUNSET</span>
+        <a href="#" class="title">ブランニューロンT</a>
+        <span class="price">¥24,200</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic6.webp">
+        </a>
+        <span class="brand">MILD SUNSET</span>
+        <a href="#" class="title">MロゴロンT</a>
+        <span class="price">¥24,200</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic7.webp">
+        </a>
+        <span class="brand">MILD SUNSET</span>
+        <a href="#" class="title">MロゴロンT</a>
+        <span class="price">¥24,200</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic8.webp">
+        </a>
+        <span class="brand">MILD SUNSET</span>
+        <a href="#" class="title">サーフロゴロンT</a>
+        <span class="price">¥24,200</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic9.webp">
+        </a>
+        <span class="brand">PRECIOUS PRESTIGE</span>
+        <a href="#" class="title">クロコダイル×ゴードレザー</a>
+        <span class="price">¥429,000</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic10.jpg">
+        </a>
+        <span class="brand">PRECIOUS PRESTIGE</span>
+        <a href="#" class="title">キャップ（クロコ）</a>
+        <span class="price">¥71,500</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic11.jpg">
+        </a>
+        <span class="brand">PRECIOUS PRESTIGE</span>
+        <a href="#" class="title">ダイヤモンドパイソン×カーフレザー</a>
+        <span class="price">¥264,000</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic12.jpg">
+        </a>
+        <span class="brand">PRECIOUS PRESTIGE</span>
+        <a href="#" class="title">ダイヤモンドパイソン×クラッチバッグ</a>
+        <span class="price">¥264,000</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic14.jpg">
+        </a>
+        <span class="brand">PRECIOUS PRESTIGE</span>
+        <a href="#" class="title">ガルーシャバック</a>
+        <span class="price">¥550,000</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic15.webp">
+        </a>
+        <span class="brand">PRECIOUS PRESTIGE</span>
+        <a href="#" class="title">クロコポケット付クルーネックロングTシャツ</a>
+        <span class="price">¥66,000</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic16.webp">
+        </a>
+        <span class="brand">PRECIOUS PRESTIGE</span>
+        <a href="#" class="title">クロコハート付クルーネックロングTシャツ</a>
+        <span class="price">¥49,500</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic17.webp">
+        </a>
+        <span class="brand">PRECIOUS PRESTIGE</span>
+        <a href="#" class="title">クロコポケット付クルーネックTシャツ</a>
+        <span class="price">¥63,800</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic18.webp">
+        </a>
+        <span class="brand">PRECIOUS PRESTIGE</span>
+        <a href="#" class="title">シャイニングロコウォレットLサイズ</a>
+        <span class="price">¥429,000</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic19.webp">
+        </a>
+        <span class="brand">BRIONI</span>
+        <a href="#" class="title">ビーチタオル</a>
+        <span class="price">¥81,180</span>
+      </div>
+      <div class="menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic20.webp">
+        </a>
+        <span class="brand">BRIONI</span>
+        <a href="#" class="title">Capriシャツ</a>
+        <span class="price">¥140,800</span>
+      </div>
+    </div>
+    <a href="#" class="more">MORE</a>
+  </section>
+  <section class="section3">
+    <div class="sc3Body">
+      <div class="logo2">
+        <img src="shop-img/logo_r.svg">
+      </div>
+      <h2>LEONを120%楽しむための会員サービス</h2>
+      <p>
+        「LEONが好き！」な皆さまにお届けするチームLEONによる特別な会員サービスです。「LEON本誌お届け」「イベント優先待遇」「買えるLEONクーポン」などに加え、会員だけが利用できる「会員限定アプリ」も！これぞ、LEONを120%楽しむためのコミュニティです。
+      </p>
+      <a href="#">MORE</a>
+    </div>
+  </section>
+  <section class="section4">
+    <div class="sec4-header">
+      <h2>SNAP STYLE</h2>
+      <span>お洒落オヤジに学ぶ！モテる春ジャケ＆スーツのこなし方</span>
+      <p>
+        麗らかな陽射しに心踊り、恋の花も咲く春。<br>
+        春ワードローブの主役といえば、ひらりと風に舞う軽快ジャケット。<br>
+        とはいえ、ただ羽織るだけじゃモテません。<br>
+        イタリアの洒落者たちから、その洒脱なこなしを学びましょう。
+      </p>
+    </div>
+    <div class="sec4-menulist">
+      <div class="sec4-menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic22.webp">
+        </a>
+        <div class="menuItem-Content">
+          <h2>
+            <a href="#">「あえての渋色」で春スーツに不良さを</a>
+          </h2>
+          <a href="#">MORE</a>
+        </div>
+      </div>
+      <div class="sec4-menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic23.webp">
+        </a>
+        <div class="menuItem-Content">
+          <h2>
+            <a href="#">ミリジャケは「＋ピンク」で可愛さを演出</a>
+          </h2>
+          <a href="#">MORE</a>
+        </div>
+      </div>
+      <div class="sec4-menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic24.webp">
+        </a>
+        <div class="menuItem-Content">
+          <h2>
+            <a href="#">ベージュジャケットは「ワントーン」で優雅に</a>
+          </h2>
+          <a href="#">MORE</a>
+        </div>
+      </div>
+      <div class="sec4-menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic21.webp">
+        </a>
+        <div class="menuItem-Content">
+          <h2>
+            <a href="#">「どっかにピンク」で春ムード全開</a>
+          </h2>
+          <a href="#">MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="snapList">
+      <a href="#">スナップ一覧はこちら</a>
+    </div>
+  </section>
+  <section class="section5">
+    <div class="sec5Item">
+      <div class="sec5Img sr">
+        <a href="#">
+          <img src="shop-img/pic25.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Monthly Contents</span>
+        <h2>買えるLEONで洒落る一週間スタイル</h2>
+        <p>
+          スーツからTシャツ、ビジネスからリゾートまであらゆるアイテム＆シーンを網羅する買えるLEON。それらはすべて日々"モテる"を追求する小誌編集部員が厳選バイイングしています。つまるところ、モテる装いを完成させるのに何軒もお店をハシゴする必要はナシ。買えるLEONを訪ねるだけで頭からつま先まで魅せられるのです。てことで、その実例をここに。ぜひコーデ一式お求めのうえ毎日モテちゃってくださいね。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>「ジャケットオヤジ」はやっぱりモテる!!</h2>
+        <p>
+          エレガントからリラックスした雰囲気に至るまで、ジャケットはオヤジさんをあらゆるシーンで演出してくれますよね。最高の相棒ワードローブをお探しください。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+      <div class="sec5Img-r sl">
+        <a href="#">
+          <img src="shop-img/pic26.webp">
+        </a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sr">
+        <a href="#">
+          <img src="shop-img/pic27.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>「セットアップ」で簡単リッチにモテる♡</h2>
+        <p>
+          「セットアップ」は、簡単リッチにコーディネートできるオヤジさんにとって嬉しいワードローブ。トップスにおいてはジャケットはもちろん、ブルゾンやフーディーとさまざまなモテる選択肢をご用意しております。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>モテるアウターにきっと出会えます♡</h2>
+        <p>
+          いまオススメしたいアウターアイテムを一挙ご紹介。コート、ブルゾン、ダウンまでモテるラインナップが目白押しです。運命の一着を見つけてみてくださいな。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+      <div class="sec5Img-r sl">
+        <a href="#">
+          <img src="shop-img/pic28.webp">
+        </a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sr">
+        <a href="#">
+          <img src="shop-img/pic29.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>いつでもお洒落で使える 「モテフーディー」♡</h2>
+        <p>
+          年中お洒落で使えるワードローブ「モテるフーディー」を揃えました！　アウターとしてインナーとしても着こなしのアクセントに重宝してくれますよ。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>「モテる楽パン」続々入荷中です！</h2>
+        <p>
+          買えるLEONで大好評売れてる「楽パン」を揃えました！リラックスしたはき心地の楽パンは、さまざまなラインナップをご用意しましたので、欲しい一本が必ずや見つかりますよ。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+      <div class="sec5Img-r sl">
+        <a href="#">
+          <img src="shop-img/pic30.webp">
+        </a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sr">
+        <a href="#">
+          <img src="shop-img/pic31.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>リッチなオヤジに「クロコなレザー」♡</h2>
+        <p>
+          大好評いつも売れてる「クロコダイルレザー」のアイテムを揃えました！リッチな表情の逸品をさまざまなラインナップでご用意。オヤジのエキゾ心をギラリとくすぐります。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>「勝負パンツ」に新調しませんか？</h2>
+        <p>
+          LEON目線でラインナップしたアンダーウエアや靴下などをご紹介。続々入荷していますので、気になる時にぜひぜひのぞいてみてくださいね。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+      <div class="sec5Img-r sl">
+        <a href="#">
+          <img src="shop-img/pic32.webp">
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="section5-phone">
+    <div class="sec5Item">
+      <div class="sec5Img sr">
+        <a href="#">
+          <img src="shop-img/pic25.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Monthly Contents</span>
+        <h2>買えるLEONで洒落る一週間スタイル</h2>
+        <p>
+          スーツからTシャツ、ビジネスからリゾートまであらゆるアイテム＆シーンを網羅する買えるLEON。それらはすべて日々"モテる"を追求する小誌編集部員が厳選バイイングしています。つまるところ、モテる装いを完成させるのに何軒もお店をハシゴする必要はナシ。買えるLEONを訪ねるだけで頭からつま先まで魅せられるのです。てことで、その実例をここに。ぜひコーデ一式お求めのうえ毎日モテちゃってくださいね。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sl">
+        <a href="#">
+          <img src="shop-img/pic26.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>「ジャケットオヤジ」はやっぱりモテる!!</h2>
+        <p>
+          エレガントからリラックスした雰囲気に至るまで、ジャケットはオヤジさんをあらゆるシーンで演出してくれますよね。最高の相棒ワードローブをお探しください。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sr">
+        <a href="#">
+          <img src="shop-img/pic27.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>「セットアップ」で簡単リッチにモテる♡</h2>
+        <p>
+          「セットアップ」は、簡単リッチにコーディネートできるオヤジさんにとって嬉しいワードローブ。トップスにおいてはジャケットはもちろん、ブルゾンやフーディーとさまざまなモテる選択肢をご用意しております。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sl">
+        <a href="#">
+          <img src="shop-img/pic28.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>モテるアウターにきっと出会えます♡</h2>
+        <p>
+          いまオススメしたいアウターアイテムを一挙ご紹介。コート、ブルゾン、ダウンまでモテるラインナップが目白押しです。運命の一着を見つけてみてくださいな。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sr">
+        <a href="#">
+          <img src="shop-img/pic29.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>いつでもお洒落で使える 「モテフーディー」♡</h2>
+        <p>
+          年中お洒落で使えるワードローブ「モテるフーディー」を揃えました！　アウターとしてインナーとしても着こなしのアクセントに重宝してくれますよ。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sl">
+        <a href="#">
+          <img src="shop-img/pic30.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>「モテる楽パン」続々入荷中です！</h2>
+        <p>
+          買えるLEONで大好評売れてる「楽パン」を揃えました！リラックスしたはき心地の楽パンは、さまざまなラインナップをご用意しましたので、欲しい一本が必ずや見つかりますよ。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sr">
+        <a href="#">
+          <img src="shop-img/pic31.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>リッチなオヤジに「クロコなレザー」♡</h2>
+        <p>
+          大好評いつも売れてる「クロコダイルレザー」のアイテムを揃えました！リッチな表情の逸品をさまざまなラインナップでご用意。オヤジのエキゾ心をギラリとくすぐります。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+    <div class="sec5Item">
+      <div class="sec5Img sl">
+        <a href="#">
+          <img src="shop-img/pic32.webp">
+        </a>
+      </div>
+      <div class="sec5Body">
+        <span>Pick Up</span>
+        <h2>「勝負パンツ」に新調しませんか？</h2>
+        <p>
+          LEON目線でラインナップしたアンダーウエアや靴下などをご紹介。続々入荷していますので、気になる時にぜひぜひのぞいてみてくださいね。
+        </p>
+        <a href="#">MORE</a>
+      </div>
+    </div>
+  </section>
+  <section class="section6">
+    <h2 class="sec6Title">SPECIAL CONTENTS</h2>
+    <div class="sec6Item">
+      <div class="sec6Img sl">
+        <a href="#">
+          <img src="shop-img/pic9.webp">
+        </a>
+      </div>
+      <div class="sec6Body">
+        <span>Editor’s recommends</span>
+        <h2>このリッチ感にして軽快な「プレシャス プレステージ」のクロコスニーカー</h2>
+        <p>
+          「プレシャス プレステージ」で人気のクロコダイルレザーのスニーカーに、ハイカットが登場。柔軟で軽快な履き心地は健在で、重厚な見た目に反して、一日中履いていても疲れません。こりゃ、重宝間違いなしですぞ。
+        </p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+    <div class="sec6-menulist">
+      <div class="sec6-menuItem sl">
+        <a href="#">
+          <img src="shop-img/carousel2.webp">
+        </a>
+        <div class="menuItem-Content">
+          <span>Editor’s recommends</span>
+          <h2>
+            <a href="#">街からターフまで決まる「バンデル」のセットアップ</a>
+          </h2>
+          <p>
+            モダンかつ機能性を搭載したワードローブが人気の「バンデル」から、多彩な機能を備えるスグレモノなセットアップをピックアップ。普段着としても、ゴルフの行き帰りにももってこいな、実に汎用性の高い上下おソロです。
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="sec6-menuItem sl">
+        <a href="#">
+          <img src="shop-img/carousel4.webp">
+        </a>
+        <div class="menuItem-Content">
+          <span>Editor’s recommends</span>
+          <h2>
+            <a href="#">熟練の職人技が宿る「ラギッドマインド」のリング</a>
+          </h2>
+          <p>
+            ジェンダーレスジュエリーブランド「ラギッドマインド」。国内でも限られた職人にしか作ることができない技巧派で唯一無二なジュエリーであり、このリングもまさにそんな魅力を存分に味わえる逸品です。
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="sec6-menuItem sl">
+        <a href="#">
+          <img src="shop-img/pic33.webp">
+        </a>
+        <div class="menuItem-Content">
+          <span>Editor’s recommends</span>
+          <h2>
+            <a href="#">実は快適なストレッチな「アカンサス」のジップシャツ</a>
+          </h2>
+          <p>
+            定番アイテムであるボタンダウンシャツを、フロントをジップ仕様にすることでオリジナリティを演出。この見た目で実は快適なストレッチ素材と、シンプルながらも個性に富んだ一着をご紹介いたします。
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="moreList">
+      <a href="#">MORE</a>
+    </div>
+  </section>
+  <section class="section7">
+    <div class="sec7Item">
+      <div class="sec7Body">
+        <span>Feature</span>
+        <h2>グレーの楽ジャケで色気としなやかさを纏う</h2>
+        <p>
+          至極控えめでありながら、時に煌びやかな派手色よりも艶めきを発揮するグレーの服。無彩色ゆえにオトコが本来秘める魅力を引き立て、内面から色気を醸し出してくれるのです。そんなグレーに、しなやかさという新たな魅力を融合させたのが「パオローニ」の新作ジャケット。
+        </p>
+        <a href="#">Read more</a>
+      </div>
+      <div class="sec7Img-r sr">
+        <a href="#">
+          <img src="shop-img/pic34.webp">
+        </a>
+      </div>
+    </div>
+    <div class="sec7Item-phone">
+      <div class="sec7Img-r sr">
+        <a href="#">
+          <img src="shop-img/pic34.webp">
+        </a>
+      </div>
+      <div class="sec7Body">
+        <span>Feature</span>
+        <h2>グレーの楽ジャケで色気としなやかさを纏う</h2>
+        <p>
+          至極控えめでありながら、時に煌びやかな派手色よりも艶めきを発揮するグレーの服。無彩色ゆえにオトコが本来秘める魅力を引き立て、内面から色気を醸し出してくれるのです。そんなグレーに、しなやかさという新たな魅力を融合させたのが「パオローニ」の新作ジャケット。
+        </p>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+    <div class="sec7-menulist">
+      <div class="sec7-menuItem sr">
+        <a href="#">
+          <img src="shop-img/pic35.webp">
+        </a>
+        <div class="menuItem-Content">
+          <span>Feature</span>
+          <h2>
+            <a href="#">胸襟が開かず隠さずがお洒落とモテるの極意です</a>
+          </h2>
+          <p>
+            隠し事なくつまびらかに。それは人としてとても正しいこと。でも一方で、隠されるからこそ気になってしまう、本音を知りたくて沼ってしまう、そんな気持ちもわかりすぎるほどにわかりますよね。
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="sec7-menuItem sr">
+        <a href="#">
+          <img src="shop-img/pic36.webp">
+        </a>
+        <div class="menuItem-Content">
+          <span>Feature</span>
+          <h2>
+            <a href="#">不良く、正しく、ちょいユルくそんな大人のためのウエアです</a>
+          </h2>
+          <p>
+            昨秋よりLEON GOLF班が推す、ちょいユルサイズのポロシャツ。サイズ感に少しゆとりをもたせるだけで、こなれたムードに加え、イマドキな薫りも纏える……。それはもうおなじみ「マーク＆ロナ」の得意とする部分であります。
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+      <div class="sec7-menuItem sr">
+        <a href="#">
+          <img src="shop-img/pic37.webp">
+        </a>
+        <div class="menuItem-Content">
+          <span>Feature</span>
+          <h2>
+            <a href="#">いまどきモテ♡ゴルファーの作り方</a>
+          </h2>
+          <p>
+            何かと頼りがちなモックネック。ですが、襟元にニュアンスが乏しいぶん均一的な印象に
+            陥りがちなのが悩ましい。そこで、LEONが提案したいのはトーンonトーンなカラーリングをキモに据えたトータルコーデ。陰影によって全体が立体的に立ち上がりエレガントかつスポーティさも纏えるという算段です。
+          </p>
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="moreList">
+      <a href="#">MORE</a>
+    </div>
+  </section>
+  <section class="section8">
+    <h2>NEWS</h2>
+    <div class="newsList">
+      <div class="newsItem">
+        <a href="#">
+          <div class="newsItem1">
+            <span class="days">2025.04.11</span>
+          </div>
+          <div class="newsItem2">
+            <span class="body">2日間限定、会員の皆様にポイント2倍キャンペーン！さらに新規会員に皆様には¥1,000ＯＦＦクーポンを！</span>
+          </div>
+        </a>
+      </div>
+      <div class="newsItem">
+        <a href="#">
+          <div class="newsItem1">
+            <span class="days">2025.03.17</span>
+          </div>
+          <div class="newsItem2">
+            <span class="body">3月17日（月）～3月24日（月）、全品送料無料！</span>
+          </div>
+        </a>
+      </div>
+      <div class="newsItem">
+        <a href="#">
+          <div class="newsItem1">
+            <span class="days">2025.03.077</span>
+          </div>
+          <div class="newsItem2">
+            <span class="body">2日間限定、会員の皆様にポイント2倍キャンペーン！さらに新規会員に皆様には¥1,000ＯＦＦクーポンを！</span>
+          </div>
+        </a>
+      </div>
+      <div class="newsItem">
+        <a href="#">
+          <div class="newsItem1">
+            <span class="days">2025.02.11</span>
+          </div>
+          <div class="newsItem2">
+            <span class="body">2日間限定、会員の皆様にポイント2倍キャンペーン！さらに新規会員に皆様には¥1,000ＯＦＦクーポンを！</span>
+          </div>
+        </a>
+      </div>
+      <div class="newsItem">
+        <a href="#">
+          <div class="newsItem1">
+            <span class="days">2025.02.01</span>
+          </div>
+          <div class="newsItem2">
+            <span class="body">【重要】2月の商品発送についてのお知らせ</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="moreList">
+      <a href="#">MORE</a>
+    </div>
+  </section>
+  <section class="pc-footer">
+    <div class="pc-footerItem">
+      <div class="pc-footer1">
+        <h3>LEON</h3>
+        <p>
+          「必要なのはお金じゃなくてセンスです」をコンセプトにファッション、時計、クルマ、ジュエリー、ビューティー&ヘルス、グルメ、トラベル……にいたるまで、ライフスタイル全般を網羅し、人生を謳歌するための「ゾクゾクする体験」を提案し続ける大人のためのクオリティ・ライフスタイル誌です。
+        </p>
+      </div>
+      <div class="pc-footer2">
+        <h3>MENU</h3>
+        <a href="#">
+          <span>ブランド</span>
+        </a>
+        <a href="#">
+          <span>カテゴリー</span>
+        </a>
+        <a href="#">
+          <span>スペシャルコンテンツ</span>
+        </a>
+        <a href="#">
+          <span>ニュース</span>
+        </a>
+        <a href="#">
+          <span>KAERULEON</span>
+        </a>
+        <a href="#">
+          <span>Club LEON</span>
+        </a>
+        <a href="#">
+          <span>Web LEON</span>
+        </a>
+      </div>
+      <div class="pc-footer3">
+        <h3>GUIDE / CONTACT</h3>
+        <a href="#">
+          <span>利用規約</span>
+        </a>
+        <a href="#">
+          <span>サイト利用規約</span>
+        </a>
+        <a href="#">
+          <span>プライバシーポリシー</span>
+        </a>
+        <a href="#">
+          <span>パーソナルデータの外部送信について</span>
+        </a>
+        <a href="#">
+          <span>特定商取引法に基づく表記</span>
+        </a>
+        <a href="#">
+          <span>返金ポリシー</span>
+        </a>
+        <a href="#">
+          <span>サブスクリプションのポリシー</span>
+        </a>
+        <a href="#">
+          <span>イベント キャンセルポリシー</span>
+        </a>
+        <a href="#">
+          <span>ポイントプログラムについて</span>
+        </a>
+        <a href="#">
+          <span>ポイント利用規約</span>
+        </a>
+        <a href="#">
+          <span>お問い合わせ</span>
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      <a href="#">
+        <span class="copyLink">© SHUFU TO SEIKATSU SHA. ALL RIGHTS RESERVED.</span>
+      </a>
+    </div>
+  </section>
+  <script src="shop.js"></script>
+</body>
+
+</html>
